@@ -2538,6 +2538,10 @@ form a {
 
 /* Button */
 
+  .bannerBtnLeft {
+    padding-right: 30px;
+  }
+
 	input[type="submit"],
 	input[type="reset"],
 	input[type="button"],
@@ -2753,7 +2757,7 @@ form a {
 		}
 
 		#header .logo {
-			color: #ffffff;
+			color: white;
 			display: inline-block;
 			font-weight: 600;
 			height: inherit;
@@ -2773,7 +2777,7 @@ form a {
 			transition: color 0.2s ease-in-out;
 			display: inline-block;
 			padding: 0 0.75em;
-			color: inherit;
+			color: rgba(255, 255, 255, 0.85);
 			text-decoration: none;
 			font-size: .8em;
 		}
@@ -2993,7 +2997,7 @@ form a {
 
 		#banner p {
 			font-size: 1em;
-			color: rgba(255, 255, 255, 0.55);
+			color: rgba(255, 255, 255, 0.85);
 			margin-bottom: 1.75em;
 		}
 

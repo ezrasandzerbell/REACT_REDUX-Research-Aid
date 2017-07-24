@@ -107,7 +107,7 @@ class SiteIndexContent extends Component {
                 <header>
                   <h3>Music Theory and Chemistry</h3>
                 </header>
-                <p>Music is a mysterious force. We know that there are many neurological processes triggered by listening to a song, but what other similarities can be found between chemsistry and music?</p>
+                <p>Music is a powerful force. We know that there are many neurological processes triggered by listening to a song, but what other similarities can be found between chemistry and music?</p>
                 <footer>
                   <a href="#" className="button special">More</a>
                 </footer>
