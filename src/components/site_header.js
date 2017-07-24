@@ -2,10 +2,9 @@ import React, { Component } from 'react';
 
 class SiteHeader extends Component {
   render() {
-    console.log("here");
     return (
       <header id="header">
-				<div className="inner">
+				<div className="inner headerInBanner">
 					<a href="index.html" className="logo">Home</a>
 					<nav id="nav">
 						<a href="index.html">My Research</a>

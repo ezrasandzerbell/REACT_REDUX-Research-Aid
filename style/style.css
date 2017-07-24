@@ -2721,7 +2721,7 @@ form a {
 		.subpage #header {
 			background: #5385c1;
 			top: 0;
-			height: 44px;
+			height: 108px;
 			line-height: 44px;
 			position: fixed;
 		}
@@ -2734,10 +2734,18 @@ form a {
 		line-height: 3.25em;
 		position: absolute;
 		text-align: right;
-		top: 4em;
 		width: 100%;
 		z-index: 10001;
 	}
+
+  .projectIndexHeader {
+    background-color: #5385c1;
+    top: 0;
+  }
+
+  .headerInBanner {
+    top: 4em;
+  }
 
 		#header .inner {
 			margin: 0 auto;
@@ -2833,12 +2841,21 @@ form a {
 
 	}
 
+.projectIndexBody {
+  margin-top: 200px;
+}
+
+.projectShowBody {
+  margin-top: 100px;
+}
+
 /* Nav */
 
 	@media screen and (max-width: 980px) {
 
 		#nav {
 			display: none;
+      background-color: inherit;
 		}
 
 	}
@@ -2943,8 +2960,27 @@ form a {
 		background-attachment: fixed;
 		background-repeat: no-repeat;
 		text-align: center;
-		border-top: 0.5em solid #5385c1;
 	}
+
+.floatright {
+  float: right;
+}
+
+  .pageTitle {
+    font-size: 3.5em;
+    font-weight: 100;
+    color: #5385c1;
+    line-height: 1em;
+    padding-bottom: 1em;
+  }
+
+  .sectionTitle {
+    font-size: 1.5em;
+    font-weight: 200;
+    color: #5385c1;
+    line-height: 1em;
+    padding-bottom: 1em;
+  }
 
 		#banner h1 {
 			font-size: 3.5em;
