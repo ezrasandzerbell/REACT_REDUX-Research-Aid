@@ -4,7 +4,7 @@ import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import promise from 'redux-promise';
-import ReduxThunk from 'redux-thunk';
+import thunk from 'redux-thunk';
 import reducers from './reducers';
 import PostsIndex from './components/posts_index';
 import PostsNew from './components/posts_new';
@@ -13,8 +13,10 @@ import ProjectsIndex from './components/projects_index';
 import ProjectsNew from './components/projects_new';
 import ProjectsShow from './components/projects_show';
 import SiteIndexContent from './components/site_index_content';
+import createLogger from 'redux-logger';
 
-const createStoreWithMiddleware = applyMiddleware(promise, ReduxThunk)(createStore);
+const logger = createLogger;
+const createStoreWithMiddleware = applyMiddleware(promise, thunk, logger)(createStore);
 
 ReactDOM.render(
   <Provider store={createStoreWithMiddleware (reducers)}>

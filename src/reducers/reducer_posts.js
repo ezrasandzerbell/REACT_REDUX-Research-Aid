@@ -12,7 +12,6 @@ export default function(state = {}, action) {
       // const post = action.payload.data
       // newState[post.id] = post
       // return newState
-      console.log({...state});
       return { ...state, [action.payload.data.id]: action.payload.data }
 
     case FETCH_POSTS:

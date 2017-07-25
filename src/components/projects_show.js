@@ -7,7 +7,6 @@ import SiteSimpleHeader from './site_simple_header';
 class ProjectsShow extends Component {
 
   componentDidMount() {
-    console.log(this.props)
     const { id } = this.props.match.params;
     this.props.fetchProject(id);
   }
